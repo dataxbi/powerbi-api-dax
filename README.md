@@ -16,13 +16,13 @@ Utiliza las siguientes variables del entorno:
 - PBI_DATASET_ID: ID del conjunto de datos Power BI contra el que se van a ejecutar las consultas DAX
 
 
-El script lee la consulta DAX desde un fichero que se le pueda pasar como parámetro el ejecutarlo, por ejemplo:
+Uso:
+py dax.py [consulta_dax.dax] [-csv resultados.csv]
 
-py dax.py consulta_dax.dax
+donde:
+- consulta_dax.dax es la ruta a un fichero que contiene la consulta DAX.  Si no se pasa este parámetro se busca un fichero con el nombre dax_query.dax
+- resultados.csv es la ruta a un fichero CSV donde se almacenan los resultados de la consulta DAX
 
-Si no se pasa el nombre de fichero como parámetro, trata de leer la consulta desde el fichero dax_query.dax
-
-Deveuleve el resultado de la consulta en la consola, formateado como una tabla. Tambiém muestra la consulta.
 
 
 
